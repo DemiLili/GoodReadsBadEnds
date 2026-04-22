@@ -1,0 +1,478 @@
+
+/*κύματα*/
+section{
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  background: rgb(15, 15, 44);
+  overflow: hidden;
+  z-index: 1;
+}
+section .air {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../img/waveblue3.png);
+  background-size: 1000px 100px;
+}
+section .air.air1{
+  animation: wave 30s linear infinite;
+  z-index: 5;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+section .air.air2{
+  animation: wave2 15s linear infinite;
+  z-index: 4;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+section .air.air3{
+  animation: wave 30s linear infinite;
+  z-index: 3;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+section .air.air4{
+  animation: wave2 5s linear infinite;
+  z-index: 2;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+@keyframes wave{
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: 1000px;
+  }
+}
+@keyframes wave2{
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: -1000px;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+
+.navigation{
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  color: ghostwhite;
+  height:10%;
+
+  /*border που έβγαλα γιατί είναι άσχημο*/
+  /*
+  background-color: rgb(240,255,240,0.07);
+  border-style: double;
+  border-color: transparent;
+  border-bottom-color: black;
+  */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.navigation-links{
+  float:right;
+  bottom: 20%;
+  align-items: center;
+
+  display: flex;
+  gap:0;
+  text-align: center;
+  font-size: 17px;
+}
+
+.navigation-links a{
+  padding: 20px 20px 20px 20px;
+  font-size: large;
+}
+
+.navigation-links a:link{
+  text-decoration: none;
+  color:white;
+}
+
+.navigation-links a.active{
+  background-color: white;
+  color:black;
+}
+
+.navigation-links a:hover{
+  background-color: rgb(60,60,60,0.5);
+  color:white;
+}
+
+
+.navigation-text{
+  flex:1;
+  top: 20%;
+  left:5%;
+  display: flex;
+  align-items: center;
+}
+
+/*εικόνα logo του navigation*/
+.navigation-text img {
+  float: left;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.navigation-text h1{
+
+}
+
+
+
+/*header*/
+.header{
+  top: 14%;
+  position:absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+
+  background-color: rgb(200,200,250,0.8);
+  z-index: 6;
+  border-style: solid;
+  border-color:rgb(37, 39, 77);
+  border-radius: 20px;
+
+  margin-bottom: 200vh;
+
+}
+
+/*εικόνα logo του header*/
+.header img {
+  float: left;
+  height: 72px;
+  background-color: transparent;
+  border-radius: 19px;
+
+}
+
+/*κείμενο του header*/
+.header .headergood h1{
+  font-family: 'Magneto','Arial', sans-serif;
+  color: forestgreen;
+  position:absolute;
+  left: 55%;
+  transform: translateX(-50%);
+  top:0
+}
+.header .headerbad h1 {
+  font-family: 'Magneto','Arial', sans-serif;
+  color:crimson;
+  position:absolute;
+  left: 55%;
+  transform: translateX(-50%);
+  bottom:5%
+}
+
+.pagecontent{
+  display: flex;
+  flex-direction: column;
+  flex-grow:1;
+  height: auto;
+  margin: 0 auto -50px;
+  min-height: 100%;
+  padding: 0 0 50px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.textbeforeslideshow{
+  line-break: strict;
+  order:1;
+  padding-right: 4%;
+  padding-left: 2%;
+}
+
+.textbeforeslideshow, .textafterslideshow{
+  position:relative;
+  left:5%;
+  right:5%;
+  width:90%;
+}
+
+
+.textbeforeslideshow h1, .textafterslideshow h1{
+  position:relative;
+  margin-bottom:1%;
+  margin-top:3%;
+}
+
+.textbeforeslideshow h2, .textafterslideshow h2{
+  position:relative;
+  left: 1%
+}
+
+.textbeforeslideshow p, .textafterslideshow p{
+  position:relative;
+  left: 3%
+}
+
+
+
+.slideshow-container {
+  border-radius: 20px;
+  max-width: 500px;
+  position:relative;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 6;
+  margin-bottom: 4%;
+  margin-top: 4%;
+}
+
+.slideshow-container img{
+  border-radius: 20px;
+}
+
+#slideshow0{
+  order:2;
+}
+
+#slideshow1{
+  order:4;
+  margin-bottom:5%;
+  max-height: 400px;
+  max-width: 200px;
+}
+
+/*Captions των slides*/
+.captiongood, .captionbad, .captionbook {
+  color: #f4f4f4;
+  font-size: 15px;
+  text-align: center;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 4px;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+}
+.captiongood {
+  background: rgba(20,88,20,0.6);
+}
+.captionbad {
+  background: rgba(88,20,20,0.6);
+}
+.captionbook {
+  background: rgba(111,111,111,0.6);
+}
+
+
+
+/*κουκίδες κάτω από slideshow*/
+
+.dots{
+  text-align: center;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -12%;
+  width: 100%;
+  background: rgb(230, 230, 234,0.5);
+  z-index: -1;
+
+}
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.mySlides {
+  display: none;
+}
+
+/*κουμπιά επόμενο προηγούμενο*/
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+/*αριθμός  slide*/
+.numbertext {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  background: rgba(88,88,88,0.3);
+  border-radius: 20px 0 10px 0;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.textafterslideshow{
+  order:3;
+}
+
+.not-footer{
+
+}
+
+/*footer*/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: rgb(36, 38, 43);
+  color: white;
+  text-align: center;
+  font-family: 'Century Gothic', sans-serif;
+  z-index: 100;
+}
+.footerheader{
+  font-size: large;
+  padding-top: 5px;
+}
+.footertext{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+/*background*/
+body{
+  background-color: rgb(179,191,255);
+  font-family: 'Century Gothic', sans-serif;
+}
+
+
+
+
+/*Για το αρχείο items.html*/
+
+/*Για την μπάρα αναζήτησης*/
+.search-bar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  height:28px;
+}
+.search-bar button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  height: 28px;
+
+}
+
+.search-bar img {
+  padding-bottom: 3px;
+  height: 22px;
+  width: 22px;
+}
+
+.search-bar{
+  margin-bottom: 10px;
+}
+
+/*Για τα αποτελέσματα της αναζήτησης*/
+.search-results{
+  order:2;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Optima','Arial', sans-serif;
+}
+
+.result {
+  max-width: 200px;
+  min-width: 200px;
+  border-color: rgb(47, 79, 79,0.5);
+  border-style: solid;
+  border-radius: 10px;
+  padding: 15px 10px;
+  margin: 10px 10px 10px 10px;
+}
+
+.result img{
+  width: 100%
+}
+
+.book-title{
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 5px;
+}
+
+.search{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+

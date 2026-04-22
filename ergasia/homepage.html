@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GoodReads-BadEnds</title>
+    <link rel="icon" type="image/x-icon" href="../ergasia/img/logo.png">
+    <link rel="stylesheet" href="../ergasia/css/style.css">
+
+</head>
+<body>
+    <!-- Κύματα  -->
+    <section>
+        <div class='air air1'></div>
+        <div class='air air2'></div>
+        <div class='air air3'></div>
+        <div class='air air4'></div>
+    </section>
+
+    <!-- Navigation με κουμπιά για αρχική σελίδα και άλλη σελίδα  -->
+    <div class="navigation">
+        <div class="navigation-text">
+            <img src="../ergasia/img/logo.png" alt="logo">
+            <h1>GoodReads-BadEnds</h1>
+        </div>
+        <div class="navigation-links">
+            <a class="active" href="../ergasia/homepage.html">Homepage</a>
+            <a href="../ergasia/items.html">Βιβλία</a>
+        </div>
+    </div>
+
+    <!-- Header με το logo και το όνομα  -->
+    <div class="header">
+        <img src="../ergasia/img/logo.png" alt="logo">
+        <div class="headergood"><h1>GoodReads</h1></div>
+        <div class="headerbad"><h1>BadEnds</h1></div>
+    </div>
+
+    <div class="pagecontent">
+        <div class="textbeforeslideshow">
+            <h1>Frequently Asked Questions</h1>
+
+            <h2>Τι είναι το GoodReads-BadEnds?</h2>
+            <p>Το GoodReads-BadEnds είναι ο κατάλληλος ιστότοπος για όσους απογοητεύτηκαν από το τέλος ενός βιβλίου.
+                Εδώ μπορείς να βρεις βιβλία που νευρίασαν,απογοήτευσαν και εξόργισαν άλλους αναγνώστες και να εκφράσεις κι εσύ το μίσος σου προς αυτά!</p>
+        </div>
+
+        <!-- Το slideshow με τις εικόνες ανθρώπων -->
+        <div class="slideshow-container"  id="slideshow0">
+
+            <!-- Εικόνες του slideshow με captions -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="../ergasia/img/slides1.jpg" style="width:100%" alt="Χαρούμενος άνθρωπος που διαβάζει ένα βιβλίο">
+                <div class="captiongood">GoodReads</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="../ergasia/img/slides2.jpg" style="width:100%" alt="Στεναχωρημένος άνθρωπος που διαβάζει ένα βιβλίο">
+                <div class="captionbad">BadEnds</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="../ergasia/img/slides3.jpg" style="width:100%" alt="Χαρούμενος άνθρωπος που διαβάζει ένα βιβλίο">
+                <div class="captiongood">GoodReads</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="../ergasia/img/slides4.png" style="width:100%" alt="Στεναχωρημένος άνθρωπος που διαβάζει ένα βιβλίο">
+                <div class="captionbad">BadEnds</div>
+            </div>
+
+            <!-- Κουμπιά με βέλη του slideshow -->
+            <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+
+            <!--Κουκίδες
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div> -->
+
+        </div>
+
+
+        <div class="textafterslideshow">
+            <h2>Ουάου! Απίστευτο! Πως μπορώ να το κάνω αυτό?</h2>
+            <p>Κάνε κλικ <a href="items.html">εδώ</a> για να μεταβείς στην σελίδα με τον κατάλογο των βιβλίων</p>
+
+            <h1>Σχετικά με τα βιβλία στα οποία έχω αντιδράσει</h1>
+            <h2>Σε ποια βιβλία έχω αντιδράσει?</h2>
+            <p>Στα βιβλία που φαίνονται στο παρακάτω slideshow</p>
+
+        </div>
+
+        <!-- Το slideshow με τις εικόνες των βιβλίων στα οποία ο χρήστης έχει αντιδράσει -->
+        <div class="slideshow-container"  id="slideshow1">
+
+            <!-- Εικόνες του slideshow με captions -->
+            <div class="mySlides fade" id>
+                <div class="numbertext">1 / 2</div>
+                <img src="../ergasia/img/item1.jpg" style="width:100%" alt="Βιβλίο στο οποίο έχεις αντιδράσει">
+                <div class="captionbook">Βιβλίο 1</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 2</div>
+                <img src="../ergasia/img/item2.jpg" style="width:100%" alt="Βιβλίο στο οποίο έχεις αντιδράσει">
+                <div class="captionbook">Βιβλίο 2</div>
+            </div>
+
+
+
+            <!-- Κουμπιά με βέλη του slideshow -->
+            <a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1,1)">&#10095;</a>
+
+            <!--Κουκίδες
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div> -->
+
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footerheader">Μέλη ομάδας</div>
+        <div class="footertext">
+            Αργυρώ Μπανιώτη, Ελισάβετ Κυριαζοπούλου, Αλεξάνδρα Κολπακίδη, Δήμητρα Λιλή
+        </div>
+    </div>
+
+
+
+
+
+    <script src="../ergasia/js/homepage.js" defer></script>
+</body>
+</html>
