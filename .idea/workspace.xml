@@ -130,7 +130,8 @@
       <workItem from="1776926363753" duration="59000" />
       <workItem from="1776926589580" duration="58000" />
       <workItem from="1776927995759" duration="233000" />
-      <workItem from="1776946198527" duration="5068000" />
+      <workItem from="1776946198527" duration="5095000" />
+      <workItem from="1777058315684" duration="3509000" />
     </task>
     <task id="LOCAL-00001" summary="commit1 html,css,js">
       <option name="closed" value="true" />
@@ -188,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776946434350</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="mikres allages">
+      <option name="closed" value="true" />
+      <created>1776951363344</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1776951363344</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +253,12 @@
           <option name="totalLines" value="1475" />
           <option name="info" value="mikres allages" />
         </TimePoint>
+        <TimePoint>
+          <option name="timestamp" value="1776951363477" />
+          <option name="linesCode" value="573" />
+          <option name="totalLines" value="1516" />
+          <option name="info" value="mikres allages" />
+        </TimePoint>
       </list>
     </option>
     <option name="genericTimePoints">
@@ -267,9 +282,9 @@
           <option name="info" value="23 Απρ 2026" />
         </TimePoint>
         <TimePoint>
-          <option name="timestamp" value="1776946434557" />
-          <option name="linesCode" value="536" />
-          <option name="totalLines" value="1475" />
+          <option name="timestamp" value="1776951363477" />
+          <option name="linesCode" value="573" />
+          <option name="totalLines" value="1516" />
           <option name="info" value="23 Απρ 2026" />
         </TimePoint>
       </list>
