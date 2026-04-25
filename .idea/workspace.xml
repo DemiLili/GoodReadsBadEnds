@@ -21,9 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ba3b1267-14c7-47b0-afa6-a6b218b59f14" name="Changes" comment="mikres allages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ergasia/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/ergasia/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ergasia/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/ergasia/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ergasia/items.html" beforeDir="false" afterPath="$PROJECT_DIR$/ergasia/items.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +129,8 @@
       <workItem from="1776927995759" duration="233000" />
       <workItem from="1776946198527" duration="5095000" />
       <workItem from="1777058315684" duration="3563000" />
-      <workItem from="1777062097891" duration="170000" />
+      <workItem from="1777062097891" duration="214000" />
+      <workItem from="1777100606509" duration="1123000" />
     </task>
     <task id="LOCAL-00001" summary="commit1 html,css,js">
       <option name="closed" value="true" />
@@ -206,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777061855459</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="mikres allages">
+      <option name="closed" value="true" />
+      <created>1777062296609</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1777062296609</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +280,12 @@
           <option name="totalLines" value="1530" />
           <option name="info" value="mikres allages" />
         </TimePoint>
+        <TimePoint>
+          <option name="timestamp" value="1777062296883" />
+          <option name="linesCode" value="573" />
+          <option name="totalLines" value="1533" />
+          <option name="info" value="mikres allages" />
+        </TimePoint>
       </list>
     </option>
     <option name="genericTimePoints">
@@ -303,9 +315,9 @@
           <option name="info" value="23 Απρ 2026" />
         </TimePoint>
         <TimePoint>
-          <option name="timestamp" value="1777061855806" />
-          <option name="linesCode" value="570" />
-          <option name="totalLines" value="1530" />
+          <option name="timestamp" value="1777062296883" />
+          <option name="linesCode" value="573" />
+          <option name="totalLines" value="1533" />
           <option name="info" value="24 Απρ 2026" />
         </TimePoint>
       </list>
