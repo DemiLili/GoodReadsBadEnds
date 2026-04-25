@@ -245,15 +245,8 @@ main{
   border-radius: 20px;
 }
 
-#slideshow0{
+#slideshow{
   order:2;
-}
-
-#slideshow1{
-  order:4;
-  margin-bottom:5%;
-  max-height: 400px;
-  max-width: 200px;
 }
 
 /*Captions των slides*/
@@ -275,8 +268,7 @@ main{
 }
 
 
-/*κουκίδες κάτω από slideshow*/
-
+/*κουκίδες κάτω από slideshow τις οποίες τελικά έβγαλα
 .dots{
   text-align: center;
   padding: 8px 12px;
@@ -300,7 +292,7 @@ main{
 .active, .dot:hover {
   background-color: #717171;
 }
-
+*/
 
 .fade {
   animation-name: fade;
@@ -360,9 +352,6 @@ main{
   order:3;
 }
 
-.not-footer{
-
-}
 
 /*footer*/
 .footer {

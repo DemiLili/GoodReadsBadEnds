@@ -1,66 +1,60 @@
-let slideIndex0 = 1;
-let slideIndex1 = 1;
-showSlides(slideIndex0,0);
-showSlides(slideIndex1,1);
+let slideIndex = 0;
+showSlides(slideIndex);
+showSlidesAutomatic();
 
 // Next/previous controls
-function plusSlides(n,id) {
-    if (id===0)
-    {
-        showSlides(slideIndex0 += n,0);
-    }
-    if (id===1)
-    {
-        showSlides(slideIndex1 += n,1);
-    }
+function plusSlides(n) {
+    showSlides(slideIndex += n);
 }
 
-//Το n είναι ο αριθμός του slide στο οποίο θέλει να πάει
-//Το id είναι το id του slideshow το οποίο αλλάζει
-function showSlides(n,id) {
+function showSlides(n) {
     let i;
-    //Παίρνω το slideshow για το οποίο θέλω να κάνω ενημέρωση
-    //Βρίσκω το πραγματικό id
-    let real_id = "slideshow" + id
-    let slideshow = document.getElementById(real_id);
-    //Παίρνω τα slides του slideshow
-    let slides = slideshow.getElementsByClassName("mySlides");
 
+    //Παίρνω τα slides του slideshow
+    let slides = document.getElementsByClassName("mySlides");
     //Αν έχει φτάσει στο τέλος το κάνω να επιστρέψει στην αρχή
     if (n > slides.length)
     {
-        if (id===0)
-        {
-            slideIndex0 = 1
-        }
-        else
-        {
-            slideIndex1 = 1;
-        }
+        slideIndex = 1
     }
     //Αν θέλει να παέι στο προηγούμενο slide του αρχικού τότε το πάω στο τελευταίο
     if (n < 1)
     {
-        if (id===0)
-        {
-            slideIndex0 = slides.length
-        }
-        else
-        {
-            slideIndex1 = slides.length
-        }
+        slideIndex = slides.length
     }
 
+    //Εμφανίζω μόνο το slide που αντιστοιχεί στο slideIndex
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
+    slides[slideIndex-1].style.display = "block";
+}
 
-    if (id===0)
+function showSlidesAutomatic() {
+    let j;
+
+    //Παίρνω τα slides του slideshow
+    let slides = document.getElementsByClassName("mySlides");
+
+    //Ενημέρωση του index του slide στο οποίο βρισκόμαστε
+    slideIndex++;
+    //Αν έχει φτάσει στο τέλος το κάνω να επιστρέψει στην αρχή
+    if (slideIndex > slides.length)
     {
-        slides[slideIndex0-1].style.display = "block";
+        slideIndex = 1
     }
-    else
+    //Αν θέλει να παέι στο προηγούμενο slide του αρχικού τότε το πάω στο τελευταίο
+    if (slideIndex < 1)
     {
-        slides[slideIndex1-1].style.display = "block";
+        slideIndex = slides.length
     }
+
+    //Εμφανίζω μόνο το slide που αντιστοιχεί στο slideIndex
+    for (j = 0; j < slides.length; j++) {
+        slides[j].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "block";
+
+    //Αυτόματη κλήση του εαυτού της για αλλαγή των slides
+    setTimeout(showSlidesAutomatic, 2500);
 }
