@@ -1,3 +1,5 @@
+//Κώδικας για τα slideshow
+
 let slideIndex = 0;
 showSlides(slideIndex);
 showSlidesAutomatic();
@@ -57,4 +59,20 @@ function showSlidesAutomatic() {
 
     //Αυτόματη κλήση του εαυτού της για αλλαγή των slides
     setTimeout(showSlidesAutomatic, 2500);
+}
+
+let disliked=false
+
+//Κώδικας για τα dislike
+
+document.getElementById("book1").addEventListener("click", dislikeClicked);
+
+function dislikeClicked(){
+    if (disliked===false){
+        document.getElementById("book1").firstElementChild.src="img/dislike-after.png"
+    }
+    else{
+        document.getElementById("book1").firstElementChild.src="img/dislike-before.png"
+    }
+    disliked=!disliked
 }

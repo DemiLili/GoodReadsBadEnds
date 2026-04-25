@@ -486,14 +486,18 @@ body{
   align-items: center;
 }
 
+.dislike-section button{
+  height:15px;
+  width:15px;
+  border-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .dislike-section img{
   height:15px;
   width:15px;
   rotate:180deg;
-}
-
-.dislike-section img:hover{
-  cursor: pointer;
 }
 
 .book-title{
